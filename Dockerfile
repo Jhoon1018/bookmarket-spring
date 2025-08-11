@@ -1,13 +1,13 @@
-# Java 17 런타임
-FROM openjdk:17-jdk-slim
+# 1단계: 빌드
+FROM gradle:8.7-jdk17 AS build
+WORKDIR /home/gradle/project
+COPY . .
+RUN gradle clean build -x test
 
-# 빌드 결과 JAR를 복사
-ARG JAR_FILE=build/libs/*.jar
-COPY ${JAR_FILE} app.jar
-
-# Render가 할당하는 포트 사용
+# 2단계: 실행
+FROM eclipse-temurin:17-jre-alpine
+WORKDIR /app
+COPY --from=build /home/gradle/project/build/libs/*.jar app.jar
 ENV PORT=8080
 EXPOSE 8080
-
-# 실행
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/app/app.jar"]
