@@ -26,18 +26,18 @@
 - 데이터베이스 연동
 
 ## ▶️ 실행 방법 (로컬)
-# 1. 저장소 클론
+### 1. 저장소 클론
 git clone https://github.com/Jhoon1018/bookmarket-spring.git
 cd bookmarket-spring
 
-# 2. 빌드
-# Mac/Linux
+### 2. 빌드
+#### Mac/Linux
 ./gradlew build
-# Windows
+#### Windows
 gradlew.bat build
 
-# 3. 서버 실행
-# Mac/Linux
+### 3. 서버 실행
+#### Mac/Linux
 ./gradlew bootRun
-# Windows
+#### Windows
 gradlew.bat bootRun
