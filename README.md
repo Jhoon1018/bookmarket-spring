@@ -29,6 +29,6 @@
    git clone https://github.com/Jhoon1018/bookmarket-spring.git
    cd bookmarket-spring
    ./gradlew build   
-Windows: gradlew.bat build
+   Windows: gradlew.bat build
    ./gradlew bootRun 
-Windows: gradlew.bat bootRun
+   Windows: gradlew.bat bootRun
