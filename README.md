@@ -26,7 +26,7 @@
 - 데이터베이스 연동
 
 ## ▶️ 실행 방법 (로컬)
-1. # 1. 저장소 클론
+# 1. 저장소 클론
 git clone https://github.com/Jhoon1018/bookmarket-spring.git
 cd bookmarket-spring
 
