@@ -4,7 +4,7 @@
 현재는 게시판 기능이 어느 정도 동작하며, 추후 서점 페이지를 추가할 계획입니다.
 
 ## 🚀 데모
-- Live: https://Jhoon1018.github.io/emotion-diary-new
+- Live: https://bookmarket-spring.onrender.com/question/list
 
 ## ✨ 주요 기능
 
